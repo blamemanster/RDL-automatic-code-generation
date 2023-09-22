@@ -1,0 +1,5 @@
+- intr_type: posedge intr
+- intr_type: negedge intr
+- intr_type: bothedge intr
+- intr_type: level intr
+- intr_type: intr

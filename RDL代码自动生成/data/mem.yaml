@@ -1,0 +1,16 @@
+- mem_name: test1
+  name: '11'
+  desc: test1
+  mementries: '32'
+  memwidth: '32'
+  sw: null
+  addrmap_name: top
+  regfile_name: null
+- mem_name: '222'
+  name: test2
+  desc: '2'
+  mementries: '16'
+  memwidth: '24'
+  sw: null
+  addrmap_name: null
+  regfile_name: regfile2

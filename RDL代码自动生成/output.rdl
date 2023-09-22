@@ -1,0 +1,39 @@
+  reg add_reg {
+   }
+  addrmap 地址映射1 {
+  reg add_reg {
+   }
+  regfile 寄存器文件 {
+  reg 寄存器1 {
+    field 域1 {
+      name = '';
+      swwe_l = '';
+      encode = '';
+    }
+   }
+  reg 寄存器2 {
+    field reg2域1 {
+      name = '';
+      swwe_l = '';
+      encode = '';
+    }
+    field reg2域2 {
+      name = '';
+      swwe_l = '';
+      encode = '';
+    }
+   }
+  mem add_mem {
+    sw = '';
+  }
+  mem 内存 {
+    sw = '';
+  }
+  }
+  mem add_mem {
+    sw = '';
+  }
+  mem 内存 {
+    sw = '';
+  }
+   }

@@ -1,0 +1,101 @@
+
+addrmap addrmap1 {
+    name = " addrmap1 ";
+    desc = " addrmap1 ";
+    alignment = 4;
+    addressing = regalign;
+    signal addr_signal1 {
+        name = " addr_signal1 ";
+        desc = " addr_signal1 ";
+        signalwidth = 32;
+        sync = True;
+    };
+    signal addr_signal2 {
+        name = " addr_signal2 ";
+        desc = " addr_signal2 ";
+        signalwidth = addr_signal2;
+        sync = True;
+    };
+    regfile refile1 {
+        name = " regfile1 ";
+        desc = " regfile1 ";
+        alignment = 0;
+        signal regfile_signal1 {
+            name = " regfile_signal1 ";
+            desc = " regfile_signal1 ";
+            signalwidth = 12;
+            sync = True;
+        };
+        signal regfile_signal2 {
+            name = " regfile_signal2 ";
+            desc = " regfile_signal2 ";
+            signalwidth = 14;
+            sync = True;
+        };
+        reg regfile_reg1 {
+            name = " regfile_reg1 ";
+            desc = " regfile_reg1 ";
+            regwidth = 18;
+            reset = 0;
+            field regfile_reg_field1 {
+                name = " regfile_reg_field1 ";
+                desc = " regfile_reg_field1 ";
+                hw = rw;
+                sw = rw;
+                fieldwidth = [10,5];
+                fieldwidth_lsb = 10;
+                fieldwidth_msb = 5;
+            };
+        };
+        mem regfile_mem1 {
+            name = " regfile_mem1 ";
+            desc = " regfile_mem1 ";
+            mementries = 15;
+            memwidth = 15;
+            sw = w;
+        };
+        mem regfile_mem2 {
+            name = " regfile_mem2 ";
+            desc = " regfile_mem2 ";
+            mementries = 12;
+            memwidth = 12;
+            sw = rw;
+        };
+    };
+    reg addr_reg1 {
+        name = " addr_reg1 ";
+        desc = " addr_reg1 ";
+        regwidth = 32;
+        reset = 0;
+        accesswidth = 32;
+        field addr_reg_field1 {
+            name = " addr_reg_field1 ";
+            desc = " addr_reg_field1 ";
+            hw = rw;
+            sw = rw;
+            fieldwidth = [16,11];
+            fieldwidth_lsb = 16;
+            fieldwidth_msb = 11;
+        };
+    };
+    reg addr_reg2 {
+        name = " addr_reg2 ";
+        desc = " addr_reg2 ";
+        regwidth = 18;
+        reset = 0;
+    };
+    mem addr_mem1 {
+        name = " addr_mem1 ";
+        desc = " addr_mem1 ";
+        mementries = 23;
+        memwidth = 23;
+        sw = rw;
+    };
+    mem addr_mem2 {
+        name = " addr_mem2 ";
+        desc = " addr_mem2 ";
+        mementries = 20;
+        memwidth = 20;
+        sw = rw;
+    };
+};

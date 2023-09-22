@@ -1,0 +1,194 @@
+mock:
+- addrmap:
+  - addrmap_name: addrmap1
+    name: addrmap1
+    desc: addrmap1
+    alignment: '4'
+    sharedextbus: false
+    errextbus: false
+    bridge: false
+    addressing: regalign
+    bigen_littlen: ''
+    rsvdest_X: ''
+    msb_lsb: ''
+    reg:
+    - reg_name: addr_reg1
+      name: addr_reg1
+      regwidth: 32
+      desc: addr_reg1
+      reset: 0
+      accesswidth: '32'
+      errextbus: false
+      intr: false
+      halt: false
+      shared: false
+      instance_type: internal
+      field:
+      - id: '1'
+        field_name: addr_reg_field1
+        name: addr_reg_field1
+        desc: addr_reg_field1
+        Default: ''
+        hw: rw
+        sw: rw
+        onread: ''
+        onwrite: ''
+        swmod: false
+        swacc: false
+        singlepulse: false
+        fieldwidth: '[16,11]'
+        fieldwidth_lsb: 16
+        fieldwidth_msb: 11
+        incrthreshold: ''
+        incrvalue: ''
+        decrvalue: ''
+        decrthreshold: ''
+        next: ''
+        reset: ''
+        resetsignal: ''
+        interruptType: ''
+        intr: false
+        nonsticky: false
+        sticky: false
+        stickybit: false
+        partiycheck: false
+        precedence: ''
+        encode: ''
+    - reg_name: addr_reg2
+      name: addr_reg2
+      regwidth: 18
+      desc: addr_reg2
+      reset: 0
+      accesswidth: ''
+      errextbus: false
+      intr: false
+      halt: false
+      shared: false
+      instance_type: internal
+    mem:
+    - mem_name: addr_mem1
+      name: addr_mem1
+      desc: addr_mem1
+      mementries: '23'
+      memwidth: '23'
+      sw: rw
+    - mem_name: addr_mem2
+      name: addr_mem2
+      desc: addr_mem2
+      mementries: '20'
+      memwidth: '20'
+      sw: rw
+    signal:
+    - signal_name: addr_signal1
+      name: addr_signal1
+      desc: addr_signal1
+      signalwidth: '32'
+      sync: true
+      async: false
+      activelow: false
+      activehigh: false
+      cpuif_reset: false
+      field_reset: false
+    - signal_name: addr_signal2
+      name: addr_signal2
+      desc: addr_signal2
+      signalwidth: addr_signal2
+      sync: true
+      async: false
+      activelow: false
+      activehigh: false
+      cpuif_reset: false
+      field_reset: false
+    regfile:
+    - regfile_name: refile1
+      name: regfile1
+      desc: regfile1
+      alignment: 0
+      sharedextbus: false
+      errextbus: false
+      instance_type: internal
+      reg:
+      - reg_name: regfile_reg1
+        name: regfile_reg1
+        regwidth: 18
+        desc: regfile_reg1
+        reset: 0
+        accesswidth: ''
+        errextbus: false
+        intr: false
+        halt: false
+        shared: false
+        instance_type: internal
+        field:
+        - field_name: regfile_reg_field1
+          name: regfile_reg_field1
+          desc: regfile_reg_field1
+          Default: ''
+          hw: rw
+          sw: rw
+          onread: ''
+          onwrite: ''
+          swwe_l: ''
+          swmod: false
+          swacc: false
+          singlepulse: false
+          fieldwidth_lsb: 10
+          fieldwidth_msb: 5
+          fieldwidth: '[10,5]'
+          hwclr: false
+          hwset: false
+          hwenable_mask: ''
+          Hardware_signal_attribute: {}
+          intr_ID: ''
+          incrthreshold: ''
+          incrvalue: ''
+          decrvalue: ''
+          decrthreshold: ''
+          next: ''
+          reset: ''
+          resetsignal: ''
+          interruptType: ''
+          intr: false
+          nonsticky: false
+          sticky: false
+          stickybit: false
+          inter_enableMask: ''
+          inter_haltenable: ''
+          partiycheck: false
+          precedence: ''
+          encode: ''
+      mem:
+      - mem_name: regfile_mem1
+        name: regfile_mem1
+        desc: regfile_mem1
+        mementries: '15'
+        memwidth: '15'
+        sw: w
+      - mem_name: regfile_mem2
+        name: regfile_mem2
+        desc: regfile_mem2
+        mementries: '12'
+        memwidth: '12'
+        sw: rw
+      signal:
+      - signal_name: regfile_signal1
+        name: regfile_signal1
+        desc: regfile_signal1
+        signalwidth: '12'
+        sync: true
+        async: false
+        activelow: false
+        activehigh: false
+        cpuif_reset: false
+        field_reset: false
+      - signal_name: regfile_signal2
+        name: regfile_signal2
+        desc: regfile_signal2
+        signalwidth: '14'
+        sync: true
+        async: false
+        activelow: false
+        activehigh: false
+        cpuif_reset: false
+        field_reset: false
+  id: 1

@@ -1,0 +1,24 @@
+- regfile_name: reggrp1
+  name: this is a test regfile
+  desc: test
+  alignment: '5'
+  sharedextbus: null
+  errextbus: 'true'
+  instance_type: external
+  addrmap_name: top
+- regfile_name: regfile2
+  name: this is test2
+  desc: test2
+  alignment: '6'
+  sharedextbus: 'true'
+  errextbus: ''
+  instance_type: null
+  addrmap_name: top2
+- regfile_name: regf3
+  name: test3
+  desc: test33
+  alignment: ''
+  sharedextbus: 'false'
+  errextbus: ''
+  instance_type: internal
+  addrmap_name: top

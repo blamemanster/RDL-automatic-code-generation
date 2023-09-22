@@ -1,0 +1,3 @@
+- field_logical: anded
+- field_logical: ored
+- field_logical: xored

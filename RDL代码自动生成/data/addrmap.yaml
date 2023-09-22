@@ -1,0 +1,36 @@
+- addrmap_name: top
+  name: this is a test addrmap
+  desc: test
+  alignment: '8'
+  sharedextbus: 'true'
+  errextbus: ''
+  bridge: 'true'
+  bigen_littlen: bigendian
+  addressing: compact
+  rsvdest_X: rsvdest
+  msb_lsb: lsb0
+  addrmap_name_before: null
+- addrmap_name: top2
+  name: this is a test addrmap2
+  desc: test2
+  alignment: '5'
+  sharedextbus: ''
+  errextbus: 'false'
+  bridge: ''
+  bigen_littlen: littlendian
+  addressing: regalign
+  rsvdest_X: rsvdestX
+  msb_lsb: msb0
+  addrmap_name_before: null
+- addrmap_name: '44'
+  name: '44'
+  desc: '44'
+  alignment: '6'
+  sharedextbus: 'true'
+  errextbus: ''
+  bridge: 'false'
+  bigen_littlen: littlendian
+  addressing: fullalign
+  rsvdest_X: rsvdest
+  msb_lsb: lsb0
+  addrmap_name_before: top

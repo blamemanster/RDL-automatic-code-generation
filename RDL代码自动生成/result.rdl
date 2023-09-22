@@ -1,0 +1,222 @@
+
+enum enum1 {
+    val1 = 3`h0{
+        name = " tstt1 ";
+        desc = " this is test1 "; 
+    }; 
+    val2 = 3`h1{
+        desc = " test2 "; 
+    }; 
+}
+enum enum2 {
+    val1 = 33333{
+        name = " test3 ";
+        desc = "  "; 
+    }; 
+}
+reg r2{
+    name = " this is a test reg2 ";
+    desc = " test2 ";
+    regwidth = 32;
+    accesswidth = 5;
+    halt;
+    shared = true;
+    field f3 {
+        name = " this is test3 ";
+        desc = " test3 ";
+        fieldwidth = 32;
+        defalut = 1110;
+        onread = rclr;
+        onwrite = woclr;
+        swacc = true;
+        singlepulse = false;
+        wel;
+        anded;
+        hwset;
+        hwmask;
+        hw = rw ;
+        sw = rw ;
+        intr;
+        stickybit;
+    };
+};
+addrmap top{
+    name = " this is a test addrmap ";
+    desc = " test ";
+    alignment = 8;
+    sharedextbus = true;
+    bridge = true;
+    bigendian;
+    addressing = compact;
+    rsvdest;
+    lsb0;
+    reg r5{
+        name = " test555 ";
+        desc = " 5 ";
+        regwidth = 32;
+        accesswidth = 4;
+        errextbus = true;
+        halt;
+    };
+    regfile reggrp1{
+        name = " this is a test regfile ";
+        desc = " test ";
+        alignment = 5;
+        errextbus = true;
+        reg r1{
+            name = " this is a test reg ";
+            desc = " test ";
+            regwidth = 32;
+            accesswidth = 6;
+            errextbus = true;
+            intr;
+            halt;
+            shared = false;
+            field f1 {
+                name = " this is a test field ";
+                desc = " test ";
+                fieldwidth = 32;
+                defalut = 1001;
+                onread = rset;
+                onwrite = wzs;
+                swwe = true;
+                swacc = false;
+                singlepulse = true;
+                wel;
+                xored;
+                hwclr;
+                hwmask;
+                hw = w ;
+                sw = rw ;
+                level intr;
+                encode = enum1;
+                precedence = sw;
+                paritycheck;
+                counter;
+                incrwidth = 2;
+                incrsaturate = 10;
+                incrthreshold = 15;
+            };
+        };
+    }; 
+    regfile regf3{
+        name = " test3 ";
+        desc = " test33 ";
+        sharedextbus = false;
+    }; 
+    addrmap 44{
+        name = " 44 ";
+        desc = " 44 ";
+        alignment = 6;
+        sharedextbus = true;
+        bridge = false;
+        littlendian;
+        addressing = fullalign;
+        rsvdest;
+        lsb0;
+        reg r5{
+            name = " test555 ";
+            desc = " 5 ";
+            regwidth = 32;
+            accesswidth = 4;
+            errextbus = true;
+            halt;
+        };
+        regfile reggrp1{
+            name = " this is a test regfile ";
+            desc = " test ";
+            alignment = 5;
+            errextbus = true;
+            reg r1{
+                name = " this is a test reg ";
+                desc = " test ";
+                regwidth = 32;
+                accesswidth = 6;
+                errextbus = true;
+                intr;
+                halt;
+                shared = false;
+                field f1 {
+                    name = " this is a test field ";
+                    desc = " test ";
+                    fieldwidth = 32;
+                    defalut = 1001;
+                    onread = rset;
+                    onwrite = wzs;
+                    swwe = true;
+                    swacc = false;
+                    singlepulse = true;
+                    wel;
+                    xored;
+                    hwclr;
+                    hwmask;
+                    hw = w ;
+                    sw = rw ;
+                    level intr;
+                    encode = enum1;
+                    precedence = sw;
+                    paritycheck;
+                    counter;
+                    incrwidth = 2;
+                    incrsaturate = 10;
+                    incrthreshold = 15;
+                };
+            };
+        }; 
+        regfile regf3{
+            name = " test3 ";
+            desc = " test33 ";
+            sharedextbus = false;
+        }; 
+    };
+};
+addrmap top2{
+    name = " this is a test addrmap2 ";
+    desc = " test2 ";
+    alignment = 5;
+    errextbus = false;
+    littlendian;
+    addressing = regalign;
+    rsvdestX;
+    msb0;
+    regfile regfile2{
+        name = " this is test2 ";
+        desc = " test2 ";
+        alignment = 6;
+        sharedextbus = true;
+        reg r3{
+            name = " test3 ";
+            desc = " test33 ";
+            regwidth = 32;
+            accesswidth = 5;
+            shared = true;
+            field f2 {
+                name = " this is test2 field ";
+                desc = " test2 ";
+                fieldwidth = 32;
+                defalut = 0;
+                onread = rclr;
+                onwrite = wset;
+                swwel = true;
+                swmod = true;
+                singlepulse = true;
+                we;
+                anded;
+                hwclr;
+                hwenable;
+                hw = r ;
+                sw = r ;
+                posedge intr;
+                nonsticky;
+                encode = enum2;
+                paritycheck;
+                counter;
+                decrvalue = 3;
+                decrstaturate = 9;
+                decrthreshold = 12;
+            };
+        };
+        reg r4{
+        };
+    }; 
+};

@@ -1,0 +1,18 @@
+- enum_ID: '0'
+  enum_name: enum1
+  key: val1
+  value: 3`h0
+  name: tstt1
+  desc: this is test1
+- enum_ID: '1'
+  enum_name: enum1
+  key: val2
+  value: 3`h1
+  name: null
+  desc: test2
+- enum_ID: '2'
+  enum_name: enum2
+  key: val1
+  value: '33333'
+  name: test3
+  desc: ''

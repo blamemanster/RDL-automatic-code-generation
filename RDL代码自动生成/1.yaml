@@ -1,0 +1,820 @@
+mock:
+- addrmap:
+  - addrmap_name: 地址映射1
+    name: 地址映射
+    desc: 地址映射
+    alignment: '32'
+    sharedextbus: false
+    errextbus: false
+    bridge: false
+    addressing: regalign
+    bigen_littlen: ''
+    rsvdest_X: ''
+    msb_lsb: lsb0
+    reg:
+    - id: 1
+      reg_name: add_reg
+      name: add_reg
+      regwidth: 0
+      desc: add_reg
+      reset: 0
+      accesswidth: ''
+      errextbus: false
+      intr: false
+      halt: false
+      shared: false
+      instance_type: internal
+    mem:
+    - mem_name: add_mem
+      name: add_mem
+      desc: add_mem
+      mementries: '32'
+      memwidth: '32'
+      sw: ''
+    - mem_name: 内存
+      name: 内存
+      desc: 内存
+      mementries: ''
+      memwidth: ''
+      sw: ''
+    regfile:
+    - regfile_name: 寄存器文件
+      name: 寄存器文件
+      desc: 寄存器文件
+      alignment: '32'
+      sharedextbus: false
+      errextbus: false
+      internal: false
+      signalwidth: ''
+      signalRadio1: sync
+      signalRadio2: ''
+      signalCheck: []
+      reg:
+      - id: 1
+        reg_name: 寄存器1
+        name: 寄存器1
+        regwidth: 0
+        desc: 寄存器1
+        reset: 0
+        accesswidth: ''
+        errextbus: false
+        intr: false
+        halt: false
+        shared: false
+        instance_type: internal
+        field:
+        - id: '1'
+          field_name: 域1
+          name: 域1
+          desc: 域1
+          Default: ''
+          hw: rw
+          sw: rw
+          onread: ''
+          onwrite: ''
+          swmod: false
+          swacc: false
+          singlepulse: false
+          fieldwidth: '[13]'
+          fieldwidth_lsb: 13
+          fieldwidth_msb: 7
+          incrthreshold: ''
+          incrvalue: ''
+          decrvalue: ''
+          decrthreshold: ''
+          next: ''
+          reset: ''
+          resetsignal: ''
+          interruptType: ''
+          intr: false
+          nonsticky: false
+          sticky: false
+          stickybit: false
+          partiycheck: false
+          precedence: ''
+          encode: ''
+          hwclr: true
+          ored: true
+      - id: 2
+        reg_name: 寄存器2
+        name: 寄存器2
+        regwidth: 0
+        desc: 寄存器2
+        reset: 0
+        accesswidth: ''
+        errextbus: false
+        intr: false
+        halt: false
+        shared: false
+        instance_type: internal
+        field:
+        - id: '1'
+          field_name: reg2域1
+          name: reg2域1
+          desc: reg2域1
+          Default: ''
+          fiedlwidth: 0
+          hw: rw
+          sw: rw
+          onread: ''
+          onwrite: ''
+          swwe_l: ''
+          swmod: false
+          swacc: false
+          singlepulse: false
+          fieldwidth_lsb: 14
+          fieldwidth_msb: 7
+          fieldwidth: '[14]'
+          hwclr: false
+          hwset: false
+          hwenable_mask: ''
+          Hardware_signal_attribute: {}
+          intr_ID: ''
+          incrthreshold: ''
+          incrvalue: ''
+          decrvalue: ''
+          decrthreshold: ''
+          next: ''
+          reset: ''
+          resetsignal: ''
+          interruptType: ''
+          intr: false
+          nonsticky: false
+          sticky: false
+          stickybit: false
+          inter_enableMask: ''
+          inter_haltenable: ''
+          partiycheck: false
+          precedence: ''
+          encode: ''
+        - id: '1'
+          field_name: reg2域2
+          name: reg2域2
+          desc: reg2域2
+          Default: ''
+          fiedlwidth: 0
+          hw: rw
+          sw: rw
+          onread: ''
+          onwrite: ''
+          swwe_l: ''
+          swmod: false
+          swacc: false
+          singlepulse: false
+          fieldwidth_lsb: 16
+          fieldwidth_msb: 8
+          fieldwidth: '[16]'
+          hwclr: false
+          hwset: false
+          hwenable_mask: ''
+          Hardware_signal_attribute: {}
+          intr_ID: ''
+          incrthreshold: ''
+          incrvalue: ''
+          decrvalue: ''
+          decrthreshold: ''
+          next: ''
+          reset: ''
+          resetsignal: ''
+          interruptType: ''
+          intr: false
+          nonsticky: false
+          sticky: false
+          stickybit: false
+          inter_enableMask: ''
+          inter_haltenable: ''
+          partiycheck: false
+          precedence: ''
+          encode: ''
+      mem:
+      - mem_name: add_mem
+        name: add_mem
+        desc: add_mem
+        mementries: '32'
+        memwidth: '32'
+        sw: ''
+      - mem_name: 内存
+        name: 内存
+        desc: 内存
+        mementries: ''
+        memwidth: ''
+        sw: ''
+    id: 1
+  - reg: 1111
+  - addrmap_name: 地址映射2
+    name: 地址映射
+    desc: 地址映射
+    alignment: '32'
+    sharedextbus: false
+    errextbus: false
+    bridge: false
+    addressing: regalign
+    bigen_littlen: ''
+    rsvdest_X: ''
+    msb_lsb: lsb0
+    reg:
+    - id: 1
+      reg_name: add_reg
+      name: add_reg
+      regwidth: 0
+      desc: add_reg
+      reset: 0
+      accesswidth: ''
+      errextbus: false
+      intr: false
+      halt: false
+      shared: false
+      instance_type: internal
+    mem:
+    - mem_name: add_mem
+      name: add_mem
+      desc: add_mem
+      mementries: '32'
+      memwidth: '32'
+      sw: ''
+    - mem_name: 内存
+      name: 内存
+      desc: 内存
+      mementries: ''
+      memwidth: ''
+      sw: ''
+    regfile:
+    - regfile_name: 寄存器文件
+      name: 寄存器文件
+      desc: 寄存器文件
+      alignment: '32'
+      sharedextbus: false
+      errextbus: false
+      internal: false
+      signalwidth: ''
+      signalRadio1: sync
+      signalRadio2: ''
+      signalCheck: []
+      reg:
+      - id: 1
+        reg_name: 寄存器1
+        name: 寄存器1
+        regwidth: 0
+        desc: 寄存器1
+        reset: 0
+        accesswidth: ''
+        errextbus: false
+        intr: false
+        halt: false
+        shared: false
+        instance_type: internal
+        field:
+        - id: '1'
+          field_name: 域1
+          name: 域1
+          desc: 域1
+          Default: ''
+          hw: rw
+          sw: rw
+          onread: ''
+          onwrite: ''
+          swmod: false
+          swacc: false
+          singlepulse: false
+          fieldwidth: '[13]'
+          fieldwidth_lsb: 13
+          fieldwidth_msb: 7
+          incrthreshold: ''
+          incrvalue: ''
+          decrvalue: ''
+          decrthreshold: ''
+          next: ''
+          reset: ''
+          resetsignal: ''
+          interruptType: ''
+          intr: false
+          nonsticky: false
+          sticky: false
+          stickybit: false
+          partiycheck: false
+          precedence: ''
+          encode: ''
+          hwclr: true
+          ored: true
+      - id: 2
+        reg_name: 寄存器2
+        name: 寄存器2
+        regwidth: 0
+        desc: 寄存器2
+        reset: 0
+        accesswidth: ''
+        errextbus: false
+        intr: false
+        halt: false
+        shared: false
+        instance_type: internal
+        field:
+        - id: '1'
+          field_name: reg2域1
+          name: reg2域1
+          desc: reg2域1
+          Default: ''
+          fiedlwidth: 0
+          hw: rw
+          sw: rw
+          onread: ''
+          onwrite: ''
+          swwe_l: ''
+          swmod: false
+          swacc: false
+          singlepulse: false
+          fieldwidth_lsb: 14
+          fieldwidth_msb: 7
+          fieldwidth: '[14]'
+          hwclr: false
+          hwset: false
+          hwenable_mask: ''
+          Hardware_signal_attribute: {}
+          intr_ID: ''
+          incrthreshold: ''
+          incrvalue: ''
+          decrvalue: ''
+          decrthreshold: ''
+          next: ''
+          reset: ''
+          resetsignal: ''
+          interruptType: ''
+          intr: false
+          nonsticky: false
+          sticky: false
+          stickybit: false
+          inter_enableMask: ''
+          inter_haltenable: ''
+          partiycheck: false
+          precedence: ''
+          encode: ''
+        - id: '1'
+          field_name: reg2域2
+          name: reg2域2
+          desc: reg2域2
+          Default: ''
+          fiedlwidth: 0
+          hw: rw
+          sw: rw
+          onread: ''
+          onwrite: ''
+          swwe_l: ''
+          swmod: false
+          swacc: false
+          singlepulse: false
+          fieldwidth_lsb: 16
+          fieldwidth_msb: 8
+          fieldwidth: '[16]'
+          hwclr: false
+          hwset: false
+          hwenable_mask: ''
+          Hardware_signal_attribute: {}
+          intr_ID: ''
+          incrthreshold: ''
+          incrvalue: ''
+          decrvalue: ''
+          decrthreshold: ''
+          next: ''
+          reset: ''
+          resetsignal: ''
+          interruptType: ''
+          intr: false
+          nonsticky: false
+          sticky: false
+          stickybit: false
+          inter_enableMask: ''
+          inter_haltenable: ''
+          partiycheck: false
+          precedence: ''
+          encode: ''
+      mem:
+      - mem_name: add_mem
+        name: add_mem
+        desc: add_mem
+        mementries: '32'
+        memwidth: '32'
+        sw: ''
+      - mem_name: 内存
+        name: 内存
+        desc: 内存
+        mementries: ''
+        memwidth: ''
+        sw: ''
+    id: 1
+- addrmap:
+  - addrmap_name: 地址映射1
+    name: 地址映射
+    desc: 地址映射
+    alignment: '32'
+    sharedextbus: false
+    errextbus: false
+    bridge: false
+    addressing: regalign
+    bigen_littlen: ''
+    rsvdest_X: ''
+    msb_lsb: lsb0
+    reg:
+    - id: 1
+      reg_name: add_reg
+      name: add_reg
+      regwidth: 0
+      desc: add_reg
+      reset: 0
+      accesswidth: ''
+      errextbus: false
+      intr: false
+      halt: false
+      shared: false
+      instance_type: internal
+    mem:
+    - mem_name: add_mem
+      name: add_mem
+      desc: add_mem
+      mementries: '32'
+      memwidth: '32'
+      sw: ''
+    - mem_name: 内存
+      name: 内存
+      desc: 内存
+      mementries: ''
+      memwidth: ''
+      sw: ''
+    regfile:
+    - regfile_name: 寄存器文件
+      name: 寄存器文件
+      desc: 寄存器文件
+      alignment: '32'
+      sharedextbus: false
+      errextbus: false
+      internal: false
+      signalwidth: ''
+      signalRadio1: sync
+      signalRadio2: ''
+      signalCheck: []
+      reg:
+      - id: 1
+        reg_name: 寄存器1
+        name: 寄存器1
+        regwidth: 0
+        desc: 寄存器1
+        reset: 0
+        accesswidth: ''
+        errextbus: false
+        intr: false
+        halt: false
+        shared: false
+        instance_type: internal
+        field:
+        - id: '1'
+          field_name: 域1
+          name: 域1
+          desc: 域1
+          Default: ''
+          hw: rw
+          sw: rw
+          onread: ''
+          onwrite: ''
+          swmod: false
+          swacc: false
+          singlepulse: false
+          fieldwidth: '[13]'
+          fieldwidth_lsb: 13
+          fieldwidth_msb: 7
+          incrthreshold: ''
+          incrvalue: ''
+          decrvalue: ''
+          decrthreshold: ''
+          next: ''
+          reset: ''
+          resetsignal: ''
+          interruptType: ''
+          intr: false
+          nonsticky: false
+          sticky: false
+          stickybit: false
+          partiycheck: false
+          precedence: ''
+          encode: ''
+          hwclr: true
+          ored: true
+      - id: 2
+        reg_name: 寄存器2
+        name: 寄存器2
+        regwidth: 0
+        desc: 寄存器2
+        reset: 0
+        accesswidth: ''
+        errextbus: false
+        intr: false
+        halt: false
+        shared: false
+        instance_type: internal
+        field:
+        - id: '1'
+          field_name: reg2域1
+          name: reg2域1
+          desc: reg2域1
+          Default: ''
+          fiedlwidth: 0
+          hw: rw
+          sw: rw
+          onread: ''
+          onwrite: ''
+          swwe_l: ''
+          swmod: false
+          swacc: false
+          singlepulse: false
+          fieldwidth_lsb: 14
+          fieldwidth_msb: 7
+          fieldwidth: '[14]'
+          hwclr: false
+          hwset: false
+          hwenable_mask: ''
+          Hardware_signal_attribute: {}
+          intr_ID: ''
+          incrthreshold: ''
+          incrvalue: ''
+          decrvalue: ''
+          decrthreshold: ''
+          next: ''
+          reset: ''
+          resetsignal: ''
+          interruptType: ''
+          intr: false
+          nonsticky: false
+          sticky: false
+          stickybit: false
+          inter_enableMask: ''
+          inter_haltenable: ''
+          partiycheck: false
+          precedence: ''
+          encode: ''
+        - id: '1'
+          field_name: reg2域2
+          name: reg2域2
+          desc: reg2域2
+          Default: ''
+          fiedlwidth: 0
+          hw: rw
+          sw: rw
+          onread: ''
+          onwrite: ''
+          swwe_l: ''
+          swmod: false
+          swacc: false
+          singlepulse: false
+          fieldwidth_lsb: 16
+          fieldwidth_msb: 8
+          fieldwidth: '[16]'
+          hwclr: false
+          hwset: false
+          hwenable_mask: ''
+          Hardware_signal_attribute: {}
+          intr_ID: ''
+          incrthreshold: ''
+          incrvalue: ''
+          decrvalue: ''
+          decrthreshold: ''
+          next: ''
+          reset: ''
+          resetsignal: ''
+          interruptType: ''
+          intr: false
+          nonsticky: false
+          sticky: false
+          stickybit: false
+          inter_enableMask: ''
+          inter_haltenable: ''
+          partiycheck: false
+          precedence: ''
+          encode: ''
+      mem:
+      - mem_name: add_mem
+        name: add_mem
+        desc: add_mem
+        mementries: '32'
+        memwidth: '32'
+        sw: ''
+      - mem_name: 内存
+        name: 内存
+        desc: 内存
+        mementries: ''
+        memwidth: ''
+        sw: ''
+    id: 1
+  - reg: 1111
+  - addrmap_name: 地址映射2
+    name: 地址映射
+    desc: 地址映射
+    alignment: '32'
+    sharedextbus: false
+    errextbus: false
+    bridge: false
+    addressing: regalign
+    bigen_littlen: ''
+    rsvdest_X: ''
+    msb_lsb: lsb0
+    reg:
+    - id: 1
+      reg_name: add_reg
+      name: add_reg
+      regwidth: 0
+      desc: add_reg
+      reset: 0
+      accesswidth: ''
+      errextbus: false
+      intr: false
+      halt: false
+      shared: false
+      instance_type: internal
+    mem:
+    - mem_name: add_mem
+      name: add_mem
+      desc: add_mem
+      mementries: '32'
+      memwidth: '32'
+      sw: ''
+    - mem_name: 内存
+      name: 内存
+      desc: 内存
+      mementries: ''
+      memwidth: ''
+      sw: ''
+    regfile:
+    - regfile_name: 寄存器文件
+      name: 寄存器文件
+      desc: 寄存器文件
+      alignment: '32'
+      sharedextbus: false
+      errextbus: false
+      internal: false
+      signalwidth: ''
+      signalRadio1: sync
+      signalRadio2: ''
+      signalCheck: []
+      reg:
+      - id: 1
+        reg_name: 寄存器1
+        name: 寄存器1
+        regwidth: 0
+        desc: 寄存器1
+        reset: 0
+        accesswidth: ''
+        errextbus: false
+        intr: false
+        halt: false
+        shared: false
+        instance_type: internal
+        field:
+        - id: '1'
+          field_name: 域1
+          name: 域1
+          desc: 域1
+          Default: ''
+          hw: rw
+          sw: rw
+          onread: ''
+          onwrite: ''
+          swmod: false
+          swacc: false
+          singlepulse: false
+          fieldwidth: '[13]'
+          fieldwidth_lsb: 13
+          fieldwidth_msb: 7
+          incrthreshold: ''
+          incrvalue: ''
+          decrvalue: ''
+          decrthreshold: ''
+          next: ''
+          reset: ''
+          resetsignal: ''
+          interruptType: ''
+          intr: false
+          nonsticky: false
+          sticky: false
+          stickybit: false
+          partiycheck: false
+          precedence: ''
+          encode: ''
+          hwclr: true
+          ored: true
+      - id: 2
+        reg_name: 寄存器2
+        name: 寄存器2
+        regwidth: 0
+        desc: 寄存器2
+        reset: 0
+        accesswidth: ''
+        errextbus: false
+        intr: false
+        halt: false
+        shared: false
+        instance_type: internal
+        field:
+        - id: '1'
+          field_name: reg2域1
+          name: reg2域1
+          desc: reg2域1
+          Default: ''
+          fiedlwidth: 0
+          hw: rw
+          sw: rw
+          onread: ''
+          onwrite: ''
+          swwe_l: ''
+          swmod: false
+          swacc: false
+          singlepulse: false
+          fieldwidth_lsb: 14
+          fieldwidth_msb: 7
+          fieldwidth: '[14]'
+          hwclr: false
+          hwset: false
+          hwenable_mask: ''
+          Hardware_signal_attribute: {}
+          intr_ID: ''
+          incrthreshold: ''
+          incrvalue: ''
+          decrvalue: ''
+          decrthreshold: ''
+          next: ''
+          reset: ''
+          resetsignal: ''
+          interruptType: ''
+          intr: false
+          nonsticky: false
+          sticky: false
+          stickybit: false
+          inter_enableMask: ''
+          inter_haltenable: ''
+          partiycheck: false
+          precedence: ''
+          encode: ''
+        - id: '1'
+          field_name: reg2域2
+          name: reg2域2
+          desc: reg2域2
+          Default: ''
+          fiedlwidth: 0
+          hw: rw
+          sw: rw
+          onread: ''
+          onwrite: ''
+          swwe_l: ''
+          swmod: false
+          swacc: false
+          singlepulse: false
+          fieldwidth_lsb: 16
+          fieldwidth_msb: 8
+          fieldwidth: '[16]'
+          hwclr: false
+          hwset: false
+          hwenable_mask: ''
+          Hardware_signal_attribute: {}
+          intr_ID: ''
+          incrthreshold: ''
+          incrvalue: ''
+          decrvalue: ''
+          decrthreshold: ''
+          next: ''
+          reset: ''
+          resetsignal: ''
+          interruptType: ''
+          intr: false
+          nonsticky: false
+          sticky: false
+          stickybit: false
+          inter_enableMask: ''
+          inter_haltenable: ''
+          partiycheck: false
+          precedence: ''
+          encode: ''
+      mem:
+      - mem_name: add_mem
+        name: add_mem
+        desc: add_mem
+        mementries: '32'
+        memwidth: '32'
+        sw: ''
+      - mem_name: 内存
+        name: 内存
+        desc: 内存
+        mementries: ''
+        memwidth: ''
+        sw: ''
+    id: 1
+  reg:
+    reg_name: add_reg
+- reg:
+  - id: 1
+    reg_name: add_reg
+    name: add_reg
+    regwidth: 0
+    desc: add_reg
+    reset: 0
+    accesswidth: ''
+    errextbus: false
+    intr: false
+    halt: false
+    shared: false
+    instance_type: internal
